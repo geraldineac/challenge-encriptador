@@ -57,51 +57,75 @@
     <div class="fondo"></div>
 
     <!-- navbar -->
-    
+
     <nav class="navbar">
-        <div class="logo">
-          <a href="https://www.aluracursos.com/">
-            <img src="./assets/Logo-1.png" alt="Logo de Alura" width="auto"
-          height="60">
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="https://app.aluracursos.com/user/geraldineacevedo29/">Acerca de la dev</a></li>
-          <li><a href="help.html">Ayuda</a></li>
-        </ul>
-      </nav>
-      
+      <div class="logo">
+        <a href="https://www.aluracursos.com/">
+          <img
+            src="./assets/Logo-1.png"
+            alt="Logo de Alura"
+            width="auto"
+            height="60"
+          />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="https://app.aluracursos.com/user/geraldineacevedo29/"
+            >Acerca de la dev</a
+          >
+        </li>
+        <li><a href="help.html">Ayuda</a></li>
+      </ul>
+    </nav>
 
     <div class="box__1">
       <!-- Título de su sitio web -->
       <h1>Encriptador de texto</h1>
       <!-- Campo para el texto que va a ser encriptado/desencriptado -->
-      <textarea id="textarea" placeholder="Ingrese el texto aquí" >
+      
+      <!-- :) Esta solución es del grupo de compañeros argentinos de ONE G6 
+        onkeypress="return ( event.charCode >= 32 && event.charCode <= 47 ||
+        event.charCode >= 97 && event.charCode <= 122)" -->
+      <textarea
+        id="textarea"
+        placeholder="Ingrese el texto aquí"
+        onkeypress="return ( event.charCode >= 32 && event.charCode <= 47 ||
+        event.charCode >= 97 && event.charCode <= 122)"
+      >
       </textarea>
       <!-- Nota con icono de exclamacion -->
       <p id="mensajeAdvertencia">
         <img src="./assets/bi_exclamation-circle-fill-1.png" />
         Solo letras minúsculas y sin acentos
       </p>
-      <!-- Un botón para encriptar -->
-      <button
-        type="button"
-        id="encriptar"
-        onclick="document.getElementById('textarea').innerHTML = Date()"
-      >
-        Encriptar
-      </button>
+      <!-- contenedor de los botones -->
+      <div class="contenedor-botones">
+        <!-- Un botón para encriptar -->
+        <button
+          type="button"
+          id="encriptar"
+          onclick="document.getElementById('textarea').innerHTML = Date()"
+        >
+          Encriptar
+        </button>
 
-      <!-- Un botón para desencriptar -->
-      <button type="button" id="desencriptar" disabled>Desencriptar</button>
+        <!-- Un botón para desencriptar -->
+        <button type="button" id="desencriptar" disabled>Desencriptar</button>
+      </div>
     </div>
 
     <div class="box__2">
       <!-- Área para mostrar el texto encriptado/desencriptado. -->
       <!-- <textarea id="textarea" rows="4" cols="50"></textarea> -->
       <!-- Imagen -->
-      <img src="./assets/Muñeco.png" alt="Persona de rodillas mirando un diamante con una lupa" width="auto" height="200px">
+      <img
+        src="./assets/Muñeco.png"
+        alt="Persona de rodillas mirando un diamante con una lupa"
+        width="auto"
+        height="200px"
+      />
       <br />
       <!--Mensaje cuando el usuario no escribio el texto-->
       <h3 class="tituloMensajeNoEncontrado">
@@ -117,7 +141,7 @@
 
     <!-- footer -->
     <footer>
-        <span>Hecho con ❤️ por Geraldine Acevedo</span>
+      <span>Hecho con ❤️ por Geraldine Acevedo</span>
     </footer>
 
     <script src="script.js"></script>
