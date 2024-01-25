@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
     <!-- For Google -->
     <meta name="description" content="Encripta cualquier texto y lo desencripta" />
     <meta name="keywords" content="encriptador, encriptador de texto, challenge del encriptador, challenge encriptador de texto, challenge de alura, challenge de one, one grupo 6, alura latam, alura, one, oracle, oracle next education" />
@@ -31,21 +34,30 @@
 </head>
 <body>
     <!-- navbar -->
-    <navbar></navbar>
+    <nav>
+        <a href="#">
+            <img src="./assets/Logo-1.png" alt="Logo de Alura" width="auto" height="60">
+        </a>
+    </nav>
 
     <!-- Título de su sitio web -->
 
     <!-- Campo para el texto que va a ser encriptado/desencriptado -->
-    <input>
+    <input type="text" id="input" placeholder="Ingrese el texto aquí">
+
     <!-- Un botón para encriptar -->
-    <button id="encriptar"></button>
+    <button type="button" id="encriptar">Encriptar</button>
     
     <!-- Un botón para desencriptar -->
-    <button src="desencriptar"></button>
+    <button type="button" id="desencriptar">Desencriptar</button>
 
     <!-- Área para mostrar el texto encriptado/desencriptado. -->
-    <textarea></textarea>
+    <textarea id="textarea" rows="4" cols="50"></textarea>
 
+    <!-- Un botón para desencriptar -->
+    <button type="button" id="copiar">Copiar</button>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
