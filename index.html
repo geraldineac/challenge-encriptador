@@ -106,7 +106,7 @@
         <button
           type="button"
           id="encriptar"
-          onclick="document.getElementById('textarea').innerHTML = Date()"
+          onclick="encriptar();"
         >
           Encriptar
         </button>
@@ -119,21 +119,23 @@
     <div class="box__2">
       <!-- Área para mostrar el texto encriptado/desencriptado. -->
       <!-- <textarea id="textarea" rows="4" cols="50"></textarea> -->
+      <input type="text" id="inputTexto">
       <!-- Imagen -->
       <img
         src="./assets/Muñeco.png"
         alt="Persona de rodillas mirando un diamante con una lupa"
         width="auto"
-        height="200px"
+        height="200px" 
+        id="imagen"
       />
       <br />
       <!--Mensaje cuando el usuario no escribio el texto-->
       <h3 class="tituloMensajeNoEncontrado">
-        <b>Ningún mensaje fue encontrado</b>
+        <!-- <b>Ningún mensaje fue encontrado</b> -->
       </h3>
 
       <span class="parrafoIngresaTexto"
-        >Ingresa el texto que desees encriptar o desencriptar.
+        ><!-- Ingresa el texto que desees encriptar o desencriptar. -->
       </span>
       <!-- Un botón para copiar -->
       <button type="button" id="copiar">Copiar</button>
@@ -141,7 +143,7 @@
 
     <!-- footer -->
     <footer>
-      <span>Hecho con ❤️ por Geraldine Acevedo</span>
+      <span>@ Copyright 2024 - Challenge Encriptador de texto - Desarrollado por Geraldine Acevedo</span>
     </footer>
 
     <script src="script.js"></script>
