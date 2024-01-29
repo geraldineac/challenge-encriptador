@@ -14,10 +14,7 @@
       rel="stylesheet"
     />
     <!-- For Google -->
-    <meta
-      name="description"
-      content="Encripta cualquier texto y lo desencripta"
-    />
+    <meta name="description" content="Encripta o desencripta cualquier texto" />
     <meta
       name="keywords"
       content="encriptador, encriptador de texto, challenge del encriptador, challenge encriptador de texto, challenge de alura, challenge de one, one grupo 6, alura latam, alura, one, oracle, oracle next education"
@@ -32,12 +29,15 @@
       property="og:title"
       content="Encriptador de Texto | Challenge de ONE G6 y Alura Latam"
     />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/NVg4C4D/Captura-web-29-1-2024-1282-127-0-0-1.jpg"
+    />
     <meta property="og:url" content="" />
     <meta
       property="og:description"
-      content="Encripta cualquier texto y lo desencripta"
+      content="Encripta o desencripta cualquier texto"
     />
 
     <!-- For Twitter -->
@@ -48,9 +48,12 @@
     />
     <meta
       name="twitter:description"
-      content="Encripta cualquier texto y lo desencripta"
+      content="Encripta o desencripta cualquier texto"
     />
-    <meta name="twitter:image" content="" />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/NVg4C4D/Captura-web-29-1-2024-1282-127-0-0-1.jpg"
+    />
     <title>Encriptador de Texto | Challenge de ONE G6 y Alura Latam</title>
   </head>
   <body>
@@ -84,7 +87,7 @@
       <!-- Título de su sitio web -->
       <h1>Encriptador de texto</h1>
       <!-- Campo para el texto que va a ser encriptado/desencriptado -->
-      
+
       <!-- :) Esta solución es del grupo de compañeros argentinos de ONE G6 
         onkeypress="return ( event.charCode >= 32 && event.charCode <= 47 ||
         event.charCode >= 97 && event.charCode <= 122)" -->
@@ -96,23 +99,21 @@
       >
       </textarea>
       <!-- Nota con icono de exclamacion -->
-      <p id="mensajeAdvertencia" style="margin-top: 1rem;">
+      <p id="mensajeAdvertencia" style="margin-top: 1rem">
         <img src="./assets/bi_exclamation-circle-fill-1.png" />
         Solo letras minúsculas y sin acentos
       </p>
       <!-- contenedor de los botones -->
       <div class="contenedor-botones">
         <!-- Un botón para encriptar -->
-        <button
-          type="button"
-          id="encriptar"
-          onclick="encriptar();"
-        >
+        <button type="button" id="encriptar" onclick="encriptar();">
           Encriptar
         </button>
 
         <!-- Un botón para desencriptar -->
-        <button type="button" id="desencriptar" onclick="desencriptar();" >Desencriptar</button>
+        <button type="button" id="desencriptar" onclick="desencriptar();">
+          Desencriptar
+        </button>
       </div>
     </div>
 
@@ -125,7 +126,7 @@
         src="./assets/Muñeco.png"
         alt="Persona de rodillas mirando un diamante con una lupa"
         width="auto"
-        height="200px" 
+        height="200px"
         id="imagen"
       />
       <br />
@@ -143,7 +144,11 @@
 
     <!-- footer -->
     <footer>
-      <span>@ Copyright 2024 - Challenge de Alura Latam - Encriptador de texto <br> Desarrollado por Geraldine Acevedo</span>
+      <span
+        >@ Copyright 2024 - Challenge de Alura Latam - Encriptador de texto
+        <br />
+        Desarrollado por Geraldine Acevedo <br />
+      </span>
     </footer>
 
     <script src="script.js"></script>
