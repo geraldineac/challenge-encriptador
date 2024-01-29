@@ -1,7 +1,7 @@
 // Busca en el DOM el elemento textarea por su ID con document.getElementById
 const textArea = document.getElementById("textarea");
 const botonEncriptar = document.getElementById("encriptar");
-
+const botonDesencriptar = document.getElementById("desencriptar");
 
 // Inicia la variable de textoIngresado vacia
 let textoIngresado = "";
@@ -21,6 +21,13 @@ botonEncriptar.addEventListener('click', function() {
   mostrarMensajeError();
 });
 
+// Event listener para el botón desencriptar
+botonDesencriptar.addEventListener('click', function() {
+  let textoDesencriptado = desencriptar(textoIngresado);
+  document.getElementById("resultado").textContent = textoDesencriptado; // Muestra el resultado en el elemento <p>
+  mostrarMensajeError();
+});
+
 //boton encriptar
 function encriptar(texto) {
   let textoEncriptado = texto;
@@ -31,6 +38,20 @@ function encriptar(texto) {
     textoEncriptado = textoEncriptado.replaceAll(letra, reemplazo);
   }
   return textoEncriptado;
+}
+
+//boton desencriptar
+function desencriptar(textoEncriptado) {
+  let textoDesencriptado = textoEncriptado;
+  const llavesInversas = { "enter": "e", "imes": "i", "ai": "a", "ober": "o", "ufat": "u" };
+
+  // En este ciclo for in se reemplaza cada cadena encriptada con su vocal correspondiente
+  for (const clave in llavesInversas) {
+    const vocal = llavesInversas[clave];
+    textoDesencriptado = textoDesencriptado.replaceAll(clave, vocal);
+  }
+console.log(textoDesencriptado);
+  return textoDesencriptado;
 }
 
 
@@ -47,7 +68,8 @@ function asignarTextoElemento(elemento, texto){
 function mostrarMensajeError() {
 
   if (textoIngresado.trim() === "") {
-   
+    document.getElementById("imagen").style.display = "block";
+    document.getElementById("copiar").style.display = "none";
     asignarTextoElemento("h3", "Ningún mensaje fue encontrado");
     asignarTextoElemento("span", "Ingresa el texto que desees encriptar o desencriptar.");
     

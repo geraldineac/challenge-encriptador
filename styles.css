@@ -1,3 +1,7 @@
+:root {
+    --bg-color: #f3f5fc;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +28,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     min-height: 100vh;
-    background: #f3f5fc;
+    background: var(--bg-color);
     flex-wrap: wrap ;
 }
 
@@ -159,9 +163,7 @@ button{
     border: 2px solid #052051;
     background-color:#052051;
 }
-#copiar{
-    display: none;
-}
+
 footer{
     position: fixed;
     text-align: center;
