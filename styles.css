@@ -40,6 +40,9 @@ body {
 
 .box__2{
     margin: 50px 20px 20px;
+    padding-top: 1rem;
+    max-width: 30%;
+    min-width: 30%;
     background-color: white;
     border-top-left-radius:25px;
     border-top-right-radius:25px;
@@ -167,6 +170,10 @@ footer{
 }
 
 @media only screen and (max-width: 768px){
+   .box__2{ 
+        max-width: 75%;
+        min-width: 75%;
+    }
     footer{
         position: static; /* Cambia la posición a estática */
     }
@@ -181,6 +188,15 @@ footer{
         justify-content: center;
         flex-direction:column;
     } 
+
+    .contenedor-botones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        width: 100%;
+        
+    }
     
     textarea{
         width:90%;
