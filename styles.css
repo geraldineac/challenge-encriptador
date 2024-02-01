@@ -177,16 +177,26 @@ footer{
 }
 
 @media only screen and (max-width: 768px){
-   .box__2{ 
+       
+    .box__2{ 
         max-width: 75%;
         min-width: 75%;
     }
+
+    .tituloMensajeNoEncontrado{
+        text-align: center;
+    }
+
     footer{
         position: static; /* Cambia la posición a estática */
     }
 }
 
 @media only screen and (max-width: 480px) {
+
+    h1 {
+        text-align: center;
+    }
 
     .box__1, .box__2{
     
